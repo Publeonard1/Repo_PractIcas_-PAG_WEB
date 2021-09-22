@@ -1,0 +1,40 @@
+table {
+    /*Esta es una etiqueta table para cambiar el tipo de texto*/
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#navBar { /*Es una tabla de navegación  con sus propiedades*/
+    z-index: 1; /*el eje z es el tridimensional y hace rederencia a la visualización en pantalla */
+    /*position: fixed;*/ /* Po. fixed es para la posición y quedará fijo en la parte de arriba*/
+    top: 0; /*top, left posiciones*/
+    left: 0;
+    width: 100%; /*Ancho*/
+    text-align: center; /*Me esta centrando el text*/
+    background: #ecb30e !important; /*El color del fondo del menu*/
+    box-shadow: 10px 10px 10px #ccc; /*Degradado de dos colores de sombra*/
+    border-radius: 10px; /**/
+}
+
+#navBar a { /*a -> Es para dar especifidad un elemento a otro donde en el menu en html aparece un <a> */
+    display: block;
+    color: #000;
+    text-decoration: none; /*aparecera resaltado pero en este caso no*/
+    border-radius: 10px; /*Estos tres ulyimos son modificados en chroom*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navBar a:hover { /*Cuando yo paso el curso al elemento se cambia el contorno en este caso el texto*/
+    color: rgb(238, 225, 225);
+    background: #b49539;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#navBar a.selected { /*Me permite dar click al alemento*/ 
+    color: #000;
+    background: #B9B9B9;
+    text-decoration: none;
+    border-radius: 10px;
+}

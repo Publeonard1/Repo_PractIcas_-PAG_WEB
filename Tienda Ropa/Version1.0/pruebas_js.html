@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mis pruebas JavaScript</title>
+    </head>
+    <body>
+        <h1>Mis pruebas Js</h1>
+        <p id="mi_parrafo">
+            ¡Hola!
+        </p>
+    </body>
+    <script type="text/javascript">
+        // alert("Hola JS");
+        console.log('Hola consola'); //Aquí no hay inconveniente trabajar con comillas dobles o simples
+        var mi_variable =8;
+        let numero = 45;
+        let numero_decimal = 4.56;
+        let mi_booleano = true;
+        let saludo = "Hola a todos!"; // Se ejecuta en la consola del navegador buscando todas estas variables y esta es una forma de hacer un debug rapido
+        // alert(saludo); me llama la variable saludo mostrando en consola "Hola a todos"
+        let arreglo = [7, 9, 'libro'];
+        console.log(arreglo);
+        console.log('La posición 2 del arreglo = ' + arreglo[2]); //La posición 2 del arreglo = libro
+        arreglo.push('Nuevo elemento');
+        console.log(arreglo);  // Me muestra en la consola (4) [7, 9, 'libro', 'Nuevo elemento'] - Deesta froma puedo visualizar, agregar elementos dentro del arreglo
+        let mi_objeto = { nombre: 'Objeto Uno', identificacion: 456 };
+        console.log(mi_objeto); // Yo puedo acceder a los atributos de ese objeto con mi_objeto.nombre o identificacion
+        console.log(mi_objeto.nombre); // Objeto 
+        //concole.log(mi_objeto.mi_arreglo[2]);
+        //let mi_objeto_2 = { id:1230, nombre: 'El segundo objeto', mi_primer_objeto: mi_objeto }
+        //console.log(mi_objeto_2);
+        //console.log('Elemento interior = ' + mi_objeto_2.mi_primer_obejto.mi_arreglo[4]);
+        console.error('Falló!');
+
+        // Cuando se usán los condicionales 
+        /*if (numero !== 10/ // numero diferente de 10
+        if (numero < 10); //menor
+        if (numero > 10); //Mayor
+        if (numero <= 10); //menor igual
+        if (numero >= 10); // Mayor igual 
+        if (numero === 10); //Iagualdad o asignación
+        La estructura de los condicionales es la misma que en Java */
+        if (numero === 10) {
+            alert('El número es igual a 10');
+        } else {
+            alert('El número es diferente');
+        }
+
+        //Ciclos for y while
+        for (i=0; i < arreglo.length; i++) {
+            console.log(arreglo[i]);
+        }
+
+        // Voy a crear una variable donde voy a acpturar el texto ¡hola!
+        let el_texto =document.getElementById("mi_parrafo").textContent;
+        console.log(el_texto); // De esta forma se captura ese texto que esta arriba "¡Hola!"
+        console.log(textoA);
+
+        document.getElementById('mi_parrafo').textContent = 'Chao';
+        mi_parrafo.innerText = 'Hola de nuevo' + nombre_Cliente;
+
+        // Crear una función
+        function mostrarMensaje() {
+            alert('Hola, soy la función');
+        }
+
+        mostrarMnesaje(); // De este modo llamo a una función 
+
+        // Yo puedo agregar un evento Ej. una imagen que se convierta en un icono - Con la pagina icons8.com puedo descargar
+    </script>
+</html>

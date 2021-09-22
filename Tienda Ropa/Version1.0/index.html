@@ -2,10 +2,12 @@
     <head>
         <meta charset="utf-8">
         <title>La tienda de ropa Sport</title>
+        <link rel="icon" href="imagenes/Favicon.jpg" type="image/jpg" />
+        <link rel="stylesheet" type="text/css" href="ESTILOS/menu.css"> <!--imporación de un archivo-->
     </head>
     <body>
-        <h1>Tienda Sport</h1>
-        <h3>Tu tienda de ropa Sport a tu alcance </h3>
+        <h1 class="titulos">Tienda Store</h1>
+        <h3 class="titulos">Tu tienda de ropa Sport a tu alcance</h3>
         <!--
         <table>
             <tr>
@@ -22,7 +24,8 @@
             </tr>
         </table>
         -->
-        <table>
+        <div id="seccion_menu1">
+        <table id="navBar">
             <tr>
                 <th><a href="index.html">Inicio</a></th>
                 <th><a href="clientes.html">Nuestros clientes</a></th>
@@ -31,5 +34,52 @@
                 <th><a href="sedes.html">Sedes</a></th>
             </tr>
         </table>
+        </div>
+        <div id="seccion_menu">
+        <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="clientes.html">Nuestros clientes</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito de compras</a></li>
+                <li><a href="sedes.html">Sedes</a></li>
+        </ul>
+        </div>
+        <img src="https://www.storefutbol.com/co/wp-content/uploads/2019/03/banner-busos-de-arquero.jpg" height="450" width="100%" alt="Banner tienda deportiva">
+        <h4>Línea de buzos para arqueros</h4>
+        <h3>Beneficios del calzado deportivo</h3>
+        <ul>
+            <li>Son cómodos</li>
+            <li>Combinan con todo tipo de ropa</li>
+        </ul>
+        <h3 class="titulos">Forma para ver el video Youtube - P1</h3>
+        <div id="video_Forma1">
+            <iframe width="727" height="409" src="https://www.youtube.com/embed/itMakY5PtsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h3>Forma para ver el video Youtube - P2</h3>
+        <div id="video_Forma2">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/itMakY5PtsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <footer>
+            <p>Autores:UTPereira - Misión tic 2022 - P56</p>
+            <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+        </footer>
     </body>
 </html>
+<style>
+/*
+    h1 {
+        font-family: Arial;
+        font-size: 60px;
+    }
+*/
+    .titulos {
+        font-family: Arial;
+        font-size: 40px;
+        color: blue;
+    }
+
+    #video_Forma1 {
+        border-style: inset;
+        width: 500ph; 
+    }
+</style>

@@ -1,0 +1,53 @@
+/* // `xs` returns only a ruleset and no media query
+// ... { ... } */
+
+@media (max-width: 575.9px) {
+    .cambio-color {
+        background-color: darkviolet;
+    }
+}
+
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .cambio-color {
+        background-color: #c8fa53;
+    }
+}
+
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .cambio-color {
+        background-color: gold;
+    }
+}
+
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .cambio-color {
+        background-color: darkslateblue;
+    }
+}
+
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    .cambio-color {
+        background-color: lightcoral;
+    }
+}
+
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) {
+    .cambio-color {
+        background-color: rgb(30, 57, 210);
+    }
+}

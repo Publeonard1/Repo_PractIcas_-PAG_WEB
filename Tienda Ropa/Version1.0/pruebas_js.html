@@ -4,13 +4,103 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="ESTILOS\ejmplo_bootstrap.css">
         <title>Mis pruebas JavaScript</title>
     </head>
     <body>
-        <h1>Mis pruebas Js</h1>
-        <p id="mi_parrafo">
-            ¡Hola!
-        </p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <div class="container">
+            <h1>Mis pruebas Js</h1>
+            <p id="mi_parrafo">
+                ¡Hola!
+            </p>
+            <div id="icono">
+                <i class="las la-cart-arrow-down icono-grande" onclick="mostrarMensaje()"></i> <!--Esto es para el icono y se adiciona otra clase llamda icono-grande-->
+            </div>
+        </div>
+        <br>
+        <div class="container" id="test_bootstrap">
+            <div class="row">
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                <div class="col-1 borde-ejemplo">
+                    <h3>X</h3>
+                </div>
+                </div>
+            </div>
+        <br>
+        </div>
+        <div class="container" id="text_2">
+            <div class="row">
+                <div class="col-6 borde-ejemplo">
+                    <h3>1 Fila, 6 Columnas</h3>
+                </div>
+                <div class="col-4 borde-ejemplo">
+                    <h3>1 Fila, 4 Columnas</h3>
+                </div>
+                <div class="col-2 borde-ejemplo">
+                    <h3>1 Fila, 2 Columnas</h3>
+                </div>
+            <br>
+            <div class="row">
+                <div class="col-7">
+                    <h3>1 Fila, 7 Columnas pero sin bordes</h3>
+                </div>
+                <div class="col-5">
+                    <h3>1 Fila, 5 Columnas pero sin bordes</h3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container" id="test_3">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus iusto nesciunt, saepe nostrum impedit eveniet perferendis ab consequuntur quis ipsa temporibus ipsam aspernatur, neque fugit officia, laudantium eaque est!</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus iusto nesciunt, saepe nostrum impedit eveniet perferendis ab consequuntur quis ipsa temporibus ipsam aspernatur, neque fugit officia, laudantium eaque est!</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cambio-color">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus iusto nesciunt, saepe nostrum impedit eveniet perferendis ab consequuntur quis ipsa temporibus ipsam aspernatur, neque fugit officia, laudantium eaque est!</p>
+                </div>
+            </div>
+        </div>
+        <br>
     </body>
     <script type="text/javascript">
         // alert("Hola JS");
@@ -25,14 +115,14 @@
         console.log(arreglo);
         console.log('La posición 2 del arreglo = ' + arreglo[2]); //La posición 2 del arreglo = libro
         arreglo.push('Nuevo elemento');
-        console.log(arreglo);  // Me muestra en la consola (4) [7, 9, 'libro', 'Nuevo elemento'] - Deesta froma puedo visualizar, agregar elementos dentro del arreglo
+        console.log(arreglo);  // Me muestra en la consola (4) [7, 9, 'libro', 'Nuevo elemento'] - De esta froma puedo visualizar, agregar elementos dentro del arreglo
         let mi_objeto = { nombre: 'Objeto Uno', identificacion: 456 };
         console.log(mi_objeto); // Yo puedo acceder a los atributos de ese objeto con mi_objeto.nombre o identificacion
         console.log(mi_objeto.nombre); // Objeto 
-        //concole.log(mi_objeto.mi_arreglo[2]);
-        //let mi_objeto_2 = { id:1230, nombre: 'El segundo objeto', mi_primer_objeto: mi_objeto }
-        //console.log(mi_objeto_2);
-        //console.log('Elemento interior = ' + mi_objeto_2.mi_primer_obejto.mi_arreglo[4]);
+        console.log(mi_objeto.identificacion);
+        let mi_objeto_2 = { id:1230, nombre: 'El segundo objeto', mi_primer_objeto: mi_objeto }
+        console.log(mi_objeto_2);
+        console.log('Elemento interior = ' + mi_objeto_2.mi_primer_objeto);
         console.error('Falló!');
 
         // Cuando se usán los condicionales 
@@ -57,18 +147,34 @@
         // Voy a crear una variable donde voy a acpturar el texto ¡hola!
         let el_texto =document.getElementById("mi_parrafo").textContent;
         console.log(el_texto); // De esta forma se captura ese texto que esta arriba "¡Hola!"
-        console.log(textoA);
+        
 
         document.getElementById('mi_parrafo').textContent = 'Chao';
         mi_parrafo.innerText = 'Hola de nuevo' + nombre_Cliente;
 
         // Crear una función
         function mostrarMensaje() {
-            alert('Hola, soy la función');
+            //alert('Hola, soy la función'); //Esta función es para el cuando se toca el botón del carrito
+            Swal.fire (
+                '¡Gracias!',
+                'El botón funciona correctamente!', //para que de un mensaje al oprimir el botón
+                'success' 
+                //'warning' Advertencia
+                //'error'   error
+                //'info'
+            )
         }
-
-        mostrarMnesaje(); // De este modo llamo a una función 
-
+        //mostrarMensaje(); // De este modo llamo a una función 
         // Yo puedo agregar un evento Ej. una imagen que se convierta en un icono - Con la pagina icons8.com puedo descargar
     </script>
 </html>
+<style>
+    .icono-grande {
+        font-size: 64px; /*Esto es para adicionar el icono grande con su tamaño*/
+        border-style: outset;
+        background-color: gold;
+    }
+    .borde-ejemplo {
+        border-style: solid;
+    }
+</style>
